@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'screens/login.dart';
-import 'firebase_options.dart'; // ده الملف اللي بيجي من Firebase
+import 'firebase_options.dart'; 
+import 'screens/todo.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Firebase Auth Lab2',
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: TodoScreen(),
     );
   }
 }
